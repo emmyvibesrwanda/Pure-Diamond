@@ -777,3 +777,214 @@ a{text-decoration:none;color:inherit}
 .chatbot-messages::-webkit-scrollbar-thumb:hover {
   background: var(--gold2);
 }
+
+/* ============================================ */
+/* ACCESSIBILITY & PERFORMANCE IMPROVEMENTS     */
+/* ============================================ */
+
+/* Skip Link for Keyboard Users */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold);
+  color: var(--navy);
+  padding: 12px 24px;
+  border-radius: 0 0 8px 8px;
+  font-weight: 700;
+  z-index: 9999;
+  transition: top 0.2s ease;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Ensure all interactive elements have sufficient touch targets */
+button, 
+a, 
+input, 
+select, 
+textarea {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Screen reader only class - hides content visually but keeps it accessible */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+}
+
+/* High contrast for text - improves readability */
+.hero-slide-panel p {
+  color: #f0f4f9;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure links are distinguishable from regular text */
+a:not(.gold-btn):not(.navy-btn):not(.whatsapp-btn):not(.email-link):not(.skip-link) {
+  text-decoration: underline;
+  color: var(--gold);
+}
+
+/* Reduced motion preference - respects user's system settings */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *:before,
+  *:after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .hero-slide {
+    transition: none !important;
+  }
+  
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  
+  .testimonial-track {
+    animation: none !important;
+  }
+  
+  .to-top {
+    animation: none !important;
+  }
+  
+  .chatbot-window {
+    animation: none !important;
+  }
+}
+
+/* High contrast mode support */
+@media (forced-colors: active) {
+  .gold-btn,
+  .navy-btn,
+  .outline-btn {
+    border: 2px solid currentColor;
+  }
+  
+  .round-icon {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Print styles - improves printing of the page */
+@media print {
+  .header,
+  .footer,
+  .to-top,
+  .chatbot-toggle,
+  .chatbot-window,
+  .slider-arrow,
+  .slider-dots,
+  .scroll-down {
+    display: none !important;
+  }
+  
+  .section {
+    padding: 30px 0 !important;
+    page-break-inside: avoid;
+  }
+  
+  .hero-slider {
+    min-height: auto !important;
+  }
+  
+  .hero-slide {
+    position: relative !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    page-break-after: always;
+  }
+  
+  .hero-slide:not(:first-child) {
+    display: none !important;
+  }
+  
+  .hero-slide-shade {
+    background: none !important;
+  }
+  
+  .hero-slide-panel {
+    color: var(--ink) !important;
+    padding: 20px 0 !important;
+  }
+  
+  .hero-slide-panel p {
+    color: var(--muted) !important;
+    text-shadow: none !important;
+  }
+  
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .promise-card {
+    background: var(--navy) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  .testimonials {
+    background: var(--navy) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  .gallery {
+    background: var(--navy) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  .classes {
+    background: var(--navy) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  .testimonial-track {
+    animation: none !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 20px !important;
+  }
+  
+  .testimonial-card {
+    background: rgba(255, 255, 255, 0.1) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
