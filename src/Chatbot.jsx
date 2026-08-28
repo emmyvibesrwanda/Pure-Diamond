@@ -3,36 +3,20 @@ import { MessageCircle, X, Send, Minimize2, Maximize2 } from 'lucide-react';
 
 const faqs = [
   {
-    question: "What are the school hours?",
-    answer: "Our school operates from 7:30 AM to 4:00 PM, Monday through Friday."
+    question: "Where is Pure Diamond ECD located?",
+    answer: "Pure Diamond ECD Community Based is located in Bugesera District, Gashora Sector, Ramiro Cell, Rweru.."
   },
   {
-    question: "What is the age range for enrollment?",
-    answer: "We accept children ages 2 to 6 years old for our Nursery 1, 2, and 3 programs."
+    question: "How much are the school fees?",
+    answer: "The school fees are 35,000 Frw."
   },
   {
-    question: "Do you provide meals?",
-    answer: "Yes, we provide nutritious meals and snacks throughout the day."
-  },
-  {
-    question: "What is the admission process?",
-    answer: "Contact us to schedule a visit, fill out the application form, and complete the enrollment registration."
-  },
-  {
-    question: "What languages are taught?",
-    answer: "We teach both English and French, with play-based learning activities in both languages."
+    question: "What school materials does my child need?",
+    answer: "The required materials listed by the school are: 6 notebooks — 5 lined, well-covered 96-page notebooks + 1 drawing notebook, 2 crayons / pencils / wooden pencils, 3 hygiene paper items, 1 rubber/eraser, 1 school bag, 2 files with metal fasteners, 1 ream of paper These requirements are listed in the school's required-materials section."
   },
   {
     question: "Is there a uniform?",
     answer: "Yes, we have a school uniform. Details will be provided upon enrollment."
-  },
-  {
-    question: "What is the student-teacher ratio?",
-    answer: "We maintain a small class size with a ratio of approximately 10:1 for personalized attention."
-  },
-  {
-    question: "Do you have after-school care?",
-    answer: "Yes, we offer extended care options. Please contact us for more details."
   }
 ];
 
