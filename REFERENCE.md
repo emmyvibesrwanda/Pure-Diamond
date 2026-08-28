@@ -1,0 +1,1 @@
+Design reference: the supplied Pure Diamond ECD School UI image in this conversation. The logo and school flyer were supplied by the user; classroom card imagery was cropped from the supplied UI reference to closely reproduce the shown design.
