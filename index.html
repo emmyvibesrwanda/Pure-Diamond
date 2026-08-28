@@ -1,14 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#062a57" />
-    <meta name="description" content="Pure Diamond ECD School — Shaping the Future with Discipline, Competence and Performance." />
-    <title>Pure Diamond ECD School</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  
+  <!-- ============================================ -->
+  <!-- PRIMARY SEO META TAGS                        -->
+  <!-- ============================================ -->
+  <title>Pure Diamond ECD School | Nursery Education in Bugesera, Rwanda</title>
+  <meta name="description" content="Pure Diamond ECD School offers quality nursery education for children ages 2-6 in Bugesera - Gashora - Ramiro. Enroll now for play-based learning in English &amp; French." />
+  <meta name="keywords" content="Pure Diamond ECD School, nursery school, early childhood education, nursery in Bugesera, preschool Rwanda, play-based learning, French and English nursery" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  <link rel="canonical" href="https://purediamond.vercel.app" />
+  
+  <!-- ============================================ -->
+  <!-- FAVICON - USING LOGO ONLY                    -->
+  <!-- ============================================ -->
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+  <link rel="apple-touch-icon" href="/assets/logo.png" />
+  
+  <!-- ============================================ -->
+  <!-- OPEN GRAPH / SOCIAL MEDIA META TAGS          -->
+  <!-- ============================================ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://purediamond.vercel.app" />
+  <meta property="og:title" content="Pure Diamond ECD School - A Great Start for a Brighter Tomorrow" />
+  <meta property="og:description" content="A safe, caring and stimulating nursery school where every child learns through play, discovery and creativity in English and French." />
+  <meta property="og:image" content="https://purediamond.vercel.app/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_RW" />
+  <meta property="og:site_name" content="Pure Diamond ECD School" />
+  
+  <!-- ============================================ -->
+  <!-- TWITTER CARD META TAGS                       -->
+  <!-- ============================================ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pure Diamond ECD School - A Great Start for a Brighter Tomorrow" />
+  <meta name="twitter:description" content="Quality nursery education in Bugesera. Enroll your child today for a foundation in discipline, competence and performance." />
+  <meta name="twitter:image" content="https://purediamond.vercel.app/assets/og-image.jpg" />
+  
+  <!-- ============================================ -->
+  <!-- GEO LOCATION META TAGS                       -->
+  <!-- ============================================ -->
+  <meta name="geo.region" content="RW-BG" />
+  <meta name="geo.placename" content="Bugesera" />
+  <meta name="geo.position" content="-2.2;30.1" />
+  <meta name="ICBM" content="-2.2, 30.1" />
+  
+  <!-- ============================================ -->
+  <!-- PERFORMANCE - PRELOAD & PRECONNECT           -->
+  <!-- ============================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="/assets/logo.png" as="image" />
+  
+  <!-- ============================================ -->
+  <!-- STRUCTURED DATA (JSON-LD)                    -->
+  <!-- ============================================ -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Preschool",
+      "name": "Pure Diamond ECD School",
+      "description": "A safe, caring and stimulating nursery school where every child learns through play, discovery and creativity.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bugesera",
+        "addressRegion": "Gashora",
+        "addressCountry": "RW"
+      },
+      "telephone": "+250783182891",
+      "email": "info@purediamond.com",
+      "url": "https://purediamond.vercel.app",
+      "openingHours": "Mo-Fr 07:30-16:00",
+      "priceRange": "$$",
+      "educationalLevel": "Preschool",
+      "ageRange": "2-6",
+      "image": "https://purediamond.vercel.app/assets/logo.png"
+    }
+  </script>
+  
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Pure Diamond ECD School",
+      "description": "Building strong foundations for a successful future through quality early childhood education.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bugesera – Gashora – Ramiro",
+        "addressCountry": "Rwanda"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+250783182891",
+        "contactType": "Admissions",
+        "availableLanguage": ["English", "French"]
+      },
+      "url": "https://purediamond.vercel.app",
+      "logo": "https://purediamond.vercel.app/assets/logo.png"
+    }
+  </script>
+  
+  <!-- ============================================ -->
+  <!-- WEB APP MANIFEST                            -->
+  <!-- ============================================ -->
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#062a57" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  
+  <!-- ============================================ -->
+  <!-- VERCEL ANALYTICS                            -->
+  <!-- ============================================ -->
+  <script>
+    window.va = window.va || function() { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+</head>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <div id="root"></div>
+  
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
